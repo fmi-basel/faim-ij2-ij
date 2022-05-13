@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>org.scijava</groupId>
+		<artifactId>pom-scijava</artifactId>
+		<version>31.1.0</version>
+		<relativePath />
+	</parent>
+
+	<groupId>ch.fmi</groupId>
+	<artifactId>faim-ij2-ij</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+	<name>FAIM ImageJ2 wrappers for ImageJ</name>
+	<description>A collection of ImageJ2 plugins wrapping several ImageJ commands to make them work headless e.g. in KNIME. Developed at the FMI Basel.</description>
+	<url>https://github.com/fmi-basel/faim-ij2-ij</url>
+	<inceptionYear>2022</inceptionYear>
+	<organization>
+		<name>Friedrich Miescher Institute for Biomedical Research (FMI), Basel</name>
+		<url>http://www.fmi.ch/</url>
+	</organization>
+	<licenses>
+		<license>
+			<name>GNU Lesser General Public License v3+</name>
+			<url>http://www.gnu.org/licenses/lgpl.html</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+	<developers>
+		<developer>
+			<id>imagejan</id>
+			<name>Jan Eglinger</name>
+			<url>https://imagej.net/people/imagejan</url>
+			<roles>
+				<!-- See https://imagej.net/contribute/governance#scijava-team-roles -->
+				<role>founder</role>
+				<role>lead</role>
+				<role>developer</role>
+				<role>debugger</role>
+				<role>reviewer</role>
+				<role>support</role>
+				<role>maintainer</role>
+			</roles>
+		</developer>
+	</developers>
+	<contributors>
+		<contributor>
+			<name>None</name>
+		</contributor>
+	</contributors>
+
+	<mailingLists>
+		<mailingList>
+			<name>Image.sc Forum</name>
+			<archive>https://forum.image.sc/</archive>
+		</mailingList>
+	</mailingLists>
+
+	<scm>
+		<connection>scm:git:git://github.com/fmi-faim/fmi-ij2-plugins</connection>
+		<developerConnection>scm:git:git@github.com:fmi-faim/fmi-ij2-plugins</developerConnection>
+		<tag>HEAD</tag>
+		<url>https://github.com/fmi-basel/faim-ij2-ij</url>
+	</scm>
+	<issueManagement>
+		<system>GitHub Issues</system>
+		<url>https://github.com/fmi-basel/faim-ij2-ij/issues</url>
+	</issueManagement>
+	<ciManagement>
+		<system>GitHub Actions</system>
+		<url>https://github.com/fmi-basel/faim-ij2-ij/actions</url>
+	</ciManagement>
+
+	<properties>
+		<package-name>ch.fmi</package-name>
+		<license.licenseName>mit</license.licenseName>
+		<license.copyrightOwners>Friedrich Miescher Institute for Biomedical Research, Basel</license.copyrightOwners>
+
+		<!-- NB: Deploy releases to the SciJava Maven repository. -->
+		<releaseProfiles>sign,deploy-to-scijava</releaseProfiles>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.scijava</groupId>
+			<artifactId>scijava-common</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>net.imagej</groupId>
+			<artifactId>ij</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>net.imglib2</groupId>
+			<artifactId>imglib2-ij</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>net.imglib2</groupId>
+			<artifactId>imglib2</artifactId>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+
+	<repositories>
+		<repository>
+			<id>scijava.public</id>
+			<url>https://maven.scijava.org/content/groups/public</url>
+		</repository>
+	</repositories>
+</project>
