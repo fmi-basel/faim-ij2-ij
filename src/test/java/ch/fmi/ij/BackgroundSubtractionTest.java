@@ -34,6 +34,7 @@ import java.util.concurrent.ExecutionException;
 
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.scijava.Context;
 import org.scijava.command.CommandModule;
@@ -62,6 +63,7 @@ public class BackgroundSubtractionTest {
 
 	@SuppressWarnings({ "rawtypes", "unchecked" })
 	@Test
+	@Ignore
 	public void testEqualParameters() throws InterruptedException, ExecutionException {
 		ImagePlus imp = IJ.openImage("https://imagej.net/images/Spindly-GFP.zip");
 		ImagePlus expected = imp.duplicate();
@@ -76,6 +78,7 @@ public class BackgroundSubtractionTest {
 	}
 
 	@Test
+	@Ignore
 	public void testUnequalParameters() throws InterruptedException, ExecutionException {
 		ImagePlus imp = IJ.openImage("https://imagej.net/images/Spindly-GFP.zip");
 		ImagePlus expected = imp.duplicate();
