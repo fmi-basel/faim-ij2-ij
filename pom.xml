@@ -11,7 +11,7 @@
 
 	<groupId>ch.fmi</groupId>
 	<artifactId>faim-ij2-ij</artifactId>
-	<version>0.0.3-SNAPSHOT</version>
+	<version>0.0.3</version>
 
 	<name>FAIM ImageJ2 wrappers for ImageJ</name>
 	<description>A collection of ImageJ2 plugins wrapping several ImageJ commands to make them work headless e.g. in KNIME. Developed at the FMI Basel.</description>
@@ -62,7 +62,7 @@
 	<scm>
 		<connection>scm:git:git://github.com/fmi-faim/faim-ij2-ij</connection>
 		<developerConnection>scm:git:git@github.com:fmi-faim/faim-ij2-ij</developerConnection>
-		<tag>HEAD</tag>
+		<tag>faim-ij2-ij-0.0.3</tag>
 		<url>https://github.com/fmi-basel/faim-ij2-ij</url>
 	</scm>
 	<issueManagement>
