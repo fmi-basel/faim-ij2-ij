@@ -60,8 +60,8 @@
 	</mailingLists>
 
 	<scm>
-		<connection>scm:git:https://github.com/fmi-faim/faim-ij2-ij</connection>
-		<developerConnection>scm:git:git@github.com:fmi-faim/faim-ij2-ij</developerConnection>
+		<connection>scm:git:https://github.com/fmi-basel/faim-ij2-ij</connection>
+		<developerConnection>scm:git:git@github.com:fmi-basel/faim-ij2-ij</developerConnection>
 		<tag>HEAD</tag>
 		<url>https://github.com/fmi-basel/faim-ij2-ij</url>
 	</scm>
