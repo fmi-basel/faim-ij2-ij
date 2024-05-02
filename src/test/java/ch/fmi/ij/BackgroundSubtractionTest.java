@@ -2,7 +2,7 @@
  * #%L
  * A collection of ImageJ2 plugins wrapping several ImageJ commands to make them work headless e.g. in KNIME. Developed at the FMI Basel.
  * %%
- * Copyright (C) 2022 Friedrich Miescher Institute for Biomedical Research, Basel
+ * Copyright (C) 2022 - 2024 Friedrich Miescher Institute for Biomedical Research, Basel
  * %%
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
